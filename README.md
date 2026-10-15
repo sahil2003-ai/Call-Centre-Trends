@@ -2,6 +2,8 @@
 
 A Power BI portfolio project for reviewing call-centre performance and service KPIs.
 
+![Status](https://img.shields.io/badge/Status-Documented-yellow)
+
 ## 📌 Table of Contents
 
 - [Overview](#-overview)
@@ -29,22 +31,18 @@ A Power BI portfolio project for reviewing call-centre performance and service K
 
 ## 🎯 Problem Statement
 
-The project frames an analytical or engineering question using the data, code, and outputs available in this repository. Findings should be interpreted according to the documented dataset, methodology, and limitations.
+This project explores the operational questions represented by its dataset and dashboard. Reliable conclusions require clear KPI definitions, validated source data, and consistent filters.
 
 ## 🎯 Objectives
 
-- Understand the data and project question.
-- Document the implemented analytical or engineering workflow.
-- Report measurable results only where supported by repository evidence.
-- Make the work reproducible for reviewers.
+- Document the actual project scope and files.
+- Identify and validate the dataset and KPI definitions.
+- Present numerical findings only when supported by repository evidence.
+- Make review and reproduction easier for technical and nontechnical readers.
 
 ## ✨ Features
 
-The features below are limited to the work described in the existing repository documentation.
-
-### Verified results status
-
-The repository contains the PBIX file but no separate source CSV, SQL file, notebook, saved KPI export, or screenshot in the current file inventory. This review therefore could not independently verify the underlying row count or numerical KPI results. No call volume, answer rate, abandonment rate, service level, or handling-time figures are invented here.
+1. Inspect the repository data and source files.\n2. Review the existing notebook/script workflow.\n3. Reproduce the documented calculations or application behavior.\n4. Validate numerical claims against outputs and record any limitations.
 
 ## 📂 Dataset
 
@@ -63,7 +61,10 @@ Dataset details and numerical metrics are documented only where the existing rep
 
 ## 🗂️ Repository Structure
 
-### Project files
+```text
+Call-Centre-Trends/
+└── project files documented below
+```
 
 | File | Purpose |
 |---|---|
@@ -87,29 +88,19 @@ Dataset details and numerical metrics are documented only where the existing rep
 
 ## 📊 Results and Insights
 
-### Verified results status
-
 The repository contains the PBIX file but no separate source CSV, SQL file, notebook, saved KPI export, or screenshot in the current file inventory. This review therefore could not independently verify the underlying row count or numerical KPI results. No call volume, answer rate, abandonment rate, service level, or handling-time figures are invented here.
 
-## Additional Project Documentation\n\n### Questions this dashboard is intended to support
+## 🖼️ Screenshots
 
-The Power BI report should be used to inspect the operational KPIs actually present in the report, compare available categories or time periods, and identify areas that merit further investigation. KPI names, units, reporting periods, filters, and denominators must be read from the PBIX file rather than inferred from the repository name.
-
-### Author
-
-Sahil Gaikwad · [GitHub](https://github.com/sahil2003-ai) · [LinkedIn](https://www.linkedin.com/in/sahil-gaikwad-a76b7224a/)\n## 🖼️ Screenshots
-
-No verified screenshot path was identified in the existing README. Add real screenshots from the repository only when the corresponding image files exist.
+No screenshot file path was verified in the current README. Add only genuine screenshots stored in the repository.
 
 ## 🧩 Challenges and Solutions
 
-### Validation and reproducibility
-
-| Challenge | Approach |
+| Challenge | Solution |
 |---|---|
-| Metrics can be mistaken for independently verified results | Preserve the evidence status stated in the existing documentation. |
-| Data sources, filters, or execution environments may differ | Confirm source paths, schema, dependencies, and calculation definitions when rerunning. |
-| Screenshots and dashboard outputs may not be independently accessible | Only link to real files present in the repository. |
+| Dashboard measures can be misunderstood without definitions | Document formula, units, filters, and denominator for each KPI. |
+| Source data may not be available outside the PBIX | Record the source, schema, refresh date, and validation approach. |
+| Screenshots can be mistaken for reproducible evidence | Capture real report pages and reconcile headline values against data. |
 
 ## ⚠️ Limitations
 
@@ -130,9 +121,9 @@ No verified screenshot path was identified in the existing README. Add real scre
 
 ## 📚 What I Learned
 
-### Skills demonstrated
-
-Power BI reporting, KPI interpretation, operational analytics, data validation, and communicating evidence to stakeholders.
+- Defining and documenting business questions before interpreting dashboard metrics.
+- Checking source data, filters, and KPI definitions before publishing results.
+- Communicating analytical limitations clearly.
 
 ## 👤 Author
 
