@@ -1,144 +1,53 @@
 # Call Centre Trends Dashboard
 
-> Power BI dashboard project for reviewing call-centre KPIs and operational performance.
+A Power BI portfolio project for reviewing call-centre performance and service KPIs.
 
-![Status](https://img.shields.io/badge/Status-Portfolio--Project-blue)
+## Project files
 
-## 📌 Table of Contents
-
-- [Overview](#overview)
-- [Problem Statement](#problem-statement)
-- [Objectives](#objectives)
-- [Features](#features)
-- [Dataset](#dataset)
-- [Tech Stack](#tech-stack)
-- [Project Workflow](#project-workflow)
-- [Repository Structure](#repository-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Results and Insights](#results-and-insights)
-- [Screenshots](#screenshots)
-- [Challenges and Solutions](#challenges-and-solutions)
-- [Limitations](#limitations)
-- [Future Improvements](#future-improvements)
-- [What I Learned](#what-i-learned)
-- [Author](#author)
-- [License](#license)
-
-## 📖 Overview
-
-Power BI dashboard project for reviewing call-centre KPIs and operational performance. This README documents the intended workflow and the files available in the repository. Verify all outputs against the current code and data before using them as evidence.
-
-## 🎯 Problem Statement
-
-Operational teams need a compact view of service metrics to identify patterns that deserve investigation.
-
-## 🎯 Objectives
-
-- Review KPIs actually present in the report.
-- Check metric definitions and reporting filters.
-- Communicate descriptive findings clearly.
-
-## ✨ Features
-
-- Power BI report in PBIX format.
-- Operational KPI visuals defined by the report.
-- Interactive filtering where configured in the file.
-
-## 📂 Dataset
-
-The PBIX is present; data source, fields, reporting window, and row count must be checked in Power BI Desktop.
-
-- **Privacy and licensing:** Check source terms and avoid publishing personal, sensitive, or restricted data.
-- **Preprocessing:** Follow the actual SQL/notebook/report implementation; do not assume cleaning steps or row counts that have not been verified.
-
-## 🛠️ Tech Stack
-
-| Technology | Purpose |
+| File | Purpose |
 |---|---|
-| Power BI | Dashboard and KPI reporting |
+| `CALL CENTRE TRENDS.pbix` | Power BI report |
+| `README.md` | Project documentation |
 
-## 🔄 Project Workflow
+## Questions this dashboard is intended to support
 
-1. Open CALL CENTRE TRENDS.pbix in Power BI Desktop.
-2. Inspect the source connection, refresh status, and reporting period.
-3. List the KPIs present and record each formula, unit, and denominator.
-4. Use available slicers to compare groups or time periods.
-5. Validate visible totals against the underlying data.
-6. Write a short summary with evidence and an appropriate operational follow-up.
+The Power BI report should be used to inspect the operational KPIs actually present in the report, compare available categories or time periods, and identify areas that merit further investigation. KPI names, units, reporting periods, filters, and denominators must be read from the PBIX file rather than inferred from the repository name.
 
-## 🗂️ Repository Structure
+## Tools
 
-```text
-Call-Centre-Trends/
-├── CALL CENTRE TRENDS.pbix
-└── README.md
-└── README.md
-```
+- Microsoft Power BI Desktop
+- Power Query and DAX only where used in the report
 
-The list above highlights known project files and folders; inspect the repository for the complete current structure.
+## How to inspect the report
 
-## ⚙️ Installation
+1. Open `CALL CENTRE TRENDS.pbix` in Power BI Desktop.
+2. Check the data source and refresh status.
+3. Record the report pages, available fields, reporting window, and active filters.
+4. For each KPI, document its formula, unit, numerator/denominator, and time window.
+5. Validate headline totals against the underlying data where accessible.
+6. Capture real screenshots and add evidence-based observations to this README.
 
-### Prerequisites
+## Verified results status
 
-- Install the tools listed in the Tech Stack that apply to this project.
-- For Python projects, use a Python version compatible with the dependencies actually imported by the code.
-- For Power BI projects, use Power BI Desktop.
+The repository contains the PBIX file but no separate source CSV, SQL file, notebook, saved KPI export, or screenshot in the current file inventory. This review therefore could not independently verify the underlying row count or numerical KPI results. No call volume, answer rate, abandonment rate, service level, or handling-time figures are invented here.
 
-### Setup
+## Limitations
 
-Requires Power BI Desktop and access to the report's data source.
+- Dashboard measures and source data could not be independently inspected in this connector review.
+- A dashboard shows descriptive patterns; it does not by itself establish the cause of service outcomes.
+- Numerical results should be added only after checking filters and formulas in Power BI Desktop.
 
-Do not run generic commands that do not match the files in this repository. Confirm the data paths, database dialect, and package versions before execution.
+## Suggested next validation steps
 
-## ▶️ Usage
+- Add the dataset provenance and schema.
+- Add screenshots from the actual dashboard pages.
+- Document each KPI and its DAX measure.
+- Export a summary table so important metrics can be independently reconciled.
 
-Open the PBIX file, reconnect or refresh the data if needed, and inspect the report pages.
+## Skills demonstrated
 
-## 📊 Results and Insights
+Power BI reporting, KPI interpretation, operational analytics, data validation, and communicating evidence to stakeholders.
 
-### Key Findings
+## Author
 
-Insert only findings supported by actual dashboard values. KPI names and values should not be assumed.
-
-### Evaluation
-
-For analytics projects, reconcile key totals and document metric definitions. For ML projects, report the baseline, split strategy, relevant metrics, and held-out evaluation results. Do not include unverified scores or business impact claims.
-
-## 🖼️ Screenshots
-
-No image files were confirmed for this repository during this update. If you have screenshots, upload them into an `images/` folder, then embed each real path here with a short caption. Do not use placeholder image paths.
-
-## 🧩 Challenges and Solutions
-
-| Challenge | Solution / validation approach |
-|---|---|
-| Avoiding ambiguous KPI interpretation | Document formula, unit, denominator, and time window for each measure. |
-
-## ⚠️ Limitations
-
-- A descriptive dashboard alone cannot prove the cause of service outcomes.
-- No separate screenshot files were found in the repository.
-
-## 🚀 Future Improvements
-
-- [ ] Add screenshots under images/.
-- [ ] Document the dataset source and KPI formulas.
-- [ ] Add verified observations and recommended follow-up questions.
-
-## 📚 What I Learned
-
-- KPI communication and dashboard structure.
-- Distinguishing descriptive patterns from causal explanations.
-
-## 👤 Author
-
-**Sahil Gaikwad**
-
-- GitHub: [sahil2003-ai](https://github.com/sahil2003-ai)
-- LinkedIn: [Sahil Gaikwad](https://www.linkedin.com/in/sahil-gaikwad-a76b7224a/)
-
-## 📄 License
-
-Check the source dataset terms and repository license.
+Sahil Gaikwad · [GitHub](https://github.com/sahil2003-ai) · [LinkedIn](https://www.linkedin.com/in/sahil-gaikwad-a76b7224a/)
