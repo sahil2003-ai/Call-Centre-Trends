@@ -1,137 +1,66 @@
 # Call Centre Trends Dashboard
 
-A Power BI portfolio project for reviewing call-centre performance and service KPIs.
+A Power BI portfolio project for reviewing call-centre operations and service-performance KPIs.
 
-![Status](https://img.shields.io/badge/Status-Documented-yellow)
+![BI](https://img.shields.io/badge/Tool-Power%20BI-F2C811)
+![Focus](https://img.shields.io/badge/Focus-Service%20Analytics-blue)
 
-## 📌 Table of Contents
+## Contents
+- [Project Overview](#project-overview)
+- [Operational Questions](#operational-questions)
+- [Dashboard Scope](#dashboard-scope)
+- [Metrics to Validate](#metrics-to-validate)
+- [Technology Stack](#technology-stack)
+- [Repository Structure](#repository-structure)
+- [Open the Report](#open-the-report)
+- [Limitations and Next Steps](#limitations-and-next-steps)
 
-- [Overview](#-overview)
-- [Problem Statement](#-problem-statement)
-- [Objectives](#-objectives)
-- [Features](#-features)
-- [Dataset](#-dataset)
-- [Tech Stack](#-tech-stack)
-- [Project Workflow](#-project-workflow)
-- [Repository Structure](#-repository-structure)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Results and Insights](#-results-and-insights)
-- [Screenshots](#-screenshots)
-- [Challenges and Solutions](#-challenges-and-solutions)
-- [Limitations](#-limitations)
-- [Future Improvements](#-future-improvements)
-- [What I Learned](#-what-i-learned)
-- [Author](#-author)
-- [License](#-license)
+## Project Overview
+The report is intended to make call-centre performance easier to review through a Power BI dashboard. Typical analysis areas include incoming calls, answered calls, service outcomes, and agent performance; exact figures should be read from a refreshed report and validated against its source.
 
-## 📖 Overview
+## Operational Questions
+- How many calls were received and answered?
+- What share of calls were answered or abandoned?
+- How do service levels and handling times vary?
+- How does performance differ across agents or time periods?
 
-A Power BI portfolio project for reviewing call-centre performance and service KPIs.
+## Dashboard Scope
+The repository contains the Power BI report. A separate source CSV, SQL file, notebook, exported KPI table, and screenshot files were not present in the reviewed file inventory.
 
-## 🎯 Problem Statement
+## Metrics to Validate
 
-This project explores the operational questions represented by its dataset and dashboard. Reliable conclusions require clear KPI definitions, validated source data, and consistent filters.
+| Metric | Recommended definition |
+|---|---|
+| Total calls | Count of unique call records |
+| Answer rate | Answered calls ÷ total calls |
+| Abandonment rate | Abandoned calls ÷ total calls |
+| Average handling time | Mean handling duration for eligible calls |
+| Service level | Calls meeting the defined wait-time threshold ÷ eligible calls |
 
-## 🎯 Objectives
+The report's actual measure definitions may differ. The underlying row count and numeric KPI results could not be independently recalculated from the repository contents, so no call-volume or service-performance figures are claimed here.
 
-- Document the actual project scope and files.
-- Identify and validate the dataset and KPI definitions.
-- Present numerical findings only when supported by repository evidence.
-- Make review and reproduction easier for technical and nontechnical readers.
+## Technology Stack
+- **Power BI Desktop:** dashboard and visual reporting.
+- **DAX / Power Query:** review the stored calculations and transformations.
 
-## ✨ Features
-
-1. Inspect the repository data and source files.\n2. Review the existing notebook/script workflow.\n3. Reproduce the documented calculations or application behavior.\n4. Validate numerical claims against outputs and record any limitations.
-
-## 📂 Dataset
-
-Dataset details and numerical metrics are documented only where the existing repository files provide evidence. See the source files and notebook outputs for the precise schema and data provenance.
-
-## 🛠️ Tech Stack
-
-### Tools
-
-- Microsoft Power BI Desktop
-- Power Query and DAX only where used in the report
-
-## 🔄 Project Workflow
-
-1. Inspect the repository data and source files.\n2. Review the existing notebook/script workflow.\n3. Reproduce the documented calculations or application behavior.\n4. Validate numerical claims against outputs and record any limitations.
-
-## 🗂️ Repository Structure
-
+## Repository Structure
 ```text
 Call-Centre-Trends/
-└── project files documented below
+└── CALL CENTRE TRENDS.pbix
 ```
 
-| File | Purpose |
-|---|---|
-| `CALL CENTRE TRENDS.pbix` | Power BI report |
-| `README.md` | Project documentation |
-
-## ⚙️ Installation
-
-### Prerequisites\n\nUse the runtime and dependencies required by the actual source files. Check the repository for a requirements or environment file before installing packages.\n\n### Setup\n\n\`\`\`bash\ngit clone https://github.com/sahil2003-ai/${repo}.git\ncd ${repo}\n\`\`\`
-
-## ▶️ Usage
-
-### How to inspect the report
-
+## Open the Report
 1. Open `CALL CENTRE TRENDS.pbix` in Power BI Desktop.
-2. Check the data source and refresh status.
-3. Record the report pages, available fields, reporting window, and active filters.
-4. For each KPI, document its formula, unit, numerator/denominator, and time window.
-5. Validate headline totals against the underlying data where accessible.
-6. Capture real screenshots and add evidence-based observations to this README.
+2. Reconnect the source if prompted.
+3. Refresh the model and inspect the filters and measure definitions.
+4. Confirm the reporting period and the rules used for answered, abandoned, and eligible calls.
 
-## 📊 Results and Insights
+## Limitations and Next Steps
+- Add the source dataset and document its schema and provenance.
+- Define each KPI and its DAX measure.
+- Add genuine screenshots from the report pages.
+- Export a summary table to make results independently reproducible.
+- Confirm how missing call durations and duplicate records are handled.
 
-The repository contains the PBIX file but no separate source CSV, SQL file, notebook, saved KPI export, or screenshot in the current file inventory. This review therefore could not independently verify the underlying row count or numerical KPI results. No call volume, answer rate, abandonment rate, service level, or handling-time figures are invented here.
-
-## 🖼️ Screenshots
-
-No screenshot file path was verified in the current README. Add only genuine screenshots stored in the repository.
-
-## 🧩 Challenges and Solutions
-
-| Challenge | Solution |
-|---|---|
-| Dashboard measures can be misunderstood without definitions | Document formula, units, filters, and denominator for each KPI. |
-| Source data may not be available outside the PBIX | Record the source, schema, refresh date, and validation approach. |
-| Screenshots can be mistaken for reproducible evidence | Capture real report pages and reconcile headline values against data. |
-
-## ⚠️ Limitations
-
-### Limitations
-
-- Dashboard measures and source data could not be independently inspected in this connector review.
-- A dashboard shows descriptive patterns; it does not by itself establish the cause of service outcomes.
-- Numerical results should be added only after checking filters and formulas in Power BI Desktop.
-
-## 🚀 Future Improvements
-
-### Suggested next validation steps
-
-- Add the dataset provenance and schema.
-- Add screenshots from the actual dashboard pages.
-- Document each KPI and its DAX measure.
-- Export a summary table so important metrics can be independently reconciled.
-
-## 📚 What I Learned
-
-- Defining and documenting business questions before interpreting dashboard metrics.
-- Checking source data, filters, and KPI definitions before publishing results.
-- Communicating analytical limitations clearly.
-
-## 👤 Author
-
-**Sahil Gaikwad**
-
-- GitHub: [sahil2003-ai](https://github.com/sahil2003-ai)
-- LinkedIn: [Sahil Gaikwad](https://www.linkedin.com/in/sahil-gaikwad-a76b7224a/)
-
-## 📄 License
-
-No verified license statement was found in the README. Check the repository's LICENSE file and the source dataset's reuse terms before redistribution.
+## Skills Demonstrated
+Business intelligence, operational KPI design, dashboard interpretation, service-performance analysis, and validation of report calculations.
